@@ -21,6 +21,7 @@
 		0575FDE520693F3B00F8FF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0575FDE720693F3B00F8FF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0575FDE820693F3B00F8FF1E /* BackgroundConsoleMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BackgroundConsoleMac.entitlements; sourceTree = "<group>"; };
+		0575FDEF206947B500F8FF1E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 			children = (
 				0575FDDD20693F3B00F8FF1E /* BackgroundConsoleMac */,
 				0575FDDC20693F3B00F8FF1E /* Products */,
+				0575FDEE206947B500F8FF1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +63,14 @@
 				0575FDE820693F3B00F8FF1E /* BackgroundConsoleMac.entitlements */,
 			);
 			path = BackgroundConsoleMac;
+			sourceTree = "<group>";
+		};
+		0575FDEE206947B500F8FF1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0575FDEF206947B500F8FF1E /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

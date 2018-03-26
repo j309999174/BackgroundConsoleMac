@@ -7,13 +7,19 @@
 //
 
 import Cocoa
+import WebKit
 
-class ViewController: NSViewController {
+class ViewController: NSViewController{
 
+    @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let backgroundconsoleurl = URL(string: "https://www.oushelun.cn/cosmeticlogin/login")
+        let backgroundconsoleurlrequest = URLRequest(url: backgroundconsoleurl!)
+        webView.uiDelegate = self as? WKUIDelegate
+        webView.load(backgroundconsoleurlrequest)
     }
 
     override var representedObject: Any? {
